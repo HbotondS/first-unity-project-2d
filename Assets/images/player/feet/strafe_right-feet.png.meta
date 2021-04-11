@@ -1,0 +1,600 @@
+fileFormatVersion: 2
+guid: 79220e3ef5eb1d941b0fbd3abb337e93
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3022077680490711307
+    second: strafe_right-feet_0
+  - first:
+      213: 7708262248482363445
+    second: strafe_right-feet_1
+  - first:
+      213: -5496797701630876780
+    second: strafe_right-feet_2
+  - first:
+      213: 1920146955745536266
+    second: strafe_right-feet_3
+  - first:
+      213: 2457353109368174744
+    second: strafe_right-feet_4
+  - first:
+      213: 3805267304798277661
+    second: strafe_right-feet_5
+  - first:
+      213: -5467493569771356041
+    second: strafe_right-feet_6
+  - first:
+      213: -4565515980768400115
+    second: strafe_right-feet_7
+  - first:
+      213: -7829913060373391856
+    second: strafe_right-feet_8
+  - first:
+      213: -5021216170036316658
+    second: strafe_right-feet_9
+  - first:
+      213: -1776824771160220397
+    second: strafe_right-feet_5
+  - first:
+      213: 811042439538167363
+    second: strafe_right-feet_6
+  - first:
+      213: -1774327462683406607
+    second: strafe_right-feet_7
+  - first:
+      213: 7158300649906994147
+    second: strafe_right-feet_8
+  - first:
+      213: 6857795099832553787
+    second: strafe_right-feet_9
+  - first:
+      213: -4681033452667935339
+    second: strafe_right-feet_15
+  - first:
+      213: -3499337276706954501
+    second: strafe_right-feet_10
+  - first:
+      213: -4985088296698113889
+    second: strafe_right-feet_11
+  - first:
+      213: 2814391944760930858
+    second: strafe_right-feet_12
+  - first:
+      213: -861735608710178960
+    second: strafe_right-feet_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: strafe_right-feet_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 392
+        width: 92
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09094583a390f920800000000000000
+      internalID: 3022077680490711307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 394
+        width: 94
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5385854ccaf39fa60800000000000000
+      internalID: 7708262248482363445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_2
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 396
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493ab181d9377b3b0800000000000000
+      internalID: -5496797701630876780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_3
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 400
+        width: 95
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09a2cd9b7bb5aa10800000000000000
+      internalID: 1920146955745536266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_4
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 403
+        width: 94
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 898779322a54a1220800000000000000
+      internalID: 2457353109368174744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 281
+        width: 94
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10d8e9d3760fc430800000000000000
+      internalID: 3805267304798277661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_6
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 284
+        width: 95
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770cb0af09f8f14b0800000000000000
+      internalID: -5467493569771356041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_7
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 288
+        width: 95
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d2ee5976704a0c0800000000000000
+      internalID: -4565515980768400115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 290
+        width: 95
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01690466e8f865390800000000000000
+      internalID: -7829913060373391856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_9
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 291
+        width: 95
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06b9843f7e015ab0800000000000000
+      internalID: -5021216170036316658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 164
+        width: 95
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d51eed8437757e0800000000000000
+      internalID: -1776824771160220397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 163
+        width: 95
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e407a3dc6614b00800000000000000
+      internalID: 811042439538167363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_12
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 162
+        width: 95
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe098fc2925067e0800000000000000
+      internalID: -1774327462683406607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_13
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 160
+        width: 95
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eb7729c384675360800000000000000
+      internalID: 7158300649906994147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_14
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 156
+        width: 95
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b311fe32f48cb2f50800000000000000
+      internalID: 6857795099832553787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 24
+        width: 94
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595e10040e0a90fb0800000000000000
+      internalID: -4681033452667935339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_16
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 21
+        width: 93
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf26990894bdf6fc0800000000000000
+      internalID: -3499337276706954501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_17
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 16
+        width: 94
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f901a553b9861dab0800000000000000
+      internalID: -4985088296698113889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_18
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 14
+        width: 94
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22323eff8abe0720800000000000000
+      internalID: 2814391944760930858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: strafe_right-feet_19
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 12
+        width: 96
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077568097008a04f0800000000000000
+      internalID: -861735608710178960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

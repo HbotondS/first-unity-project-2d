@@ -44,3 +44,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Player feet
+    uniqueID: 1911247237
+    locked: 0
+  - name: Player fist
+    uniqueID: 2119429087
+    locked: 0
