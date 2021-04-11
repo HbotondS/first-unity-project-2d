@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Character2DController : MonoBehaviour
 {
@@ -30,6 +31,15 @@ public class Character2DController : MonoBehaviour
         {
             this.feetAnimator.SetBool("isRunning", false);
             this.movementSpeed = 1;
+        }
+
+        if (Input.GetMouseButton(0))
+        {
+            this.fistAnimator.SetBool("attack", true);
+        }
+        else
+        {
+            this.fistAnimator.SetBool("attack", false);
         }
     }
 }
