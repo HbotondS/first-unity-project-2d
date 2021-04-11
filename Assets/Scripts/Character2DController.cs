@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Character2DController : MonoBehaviour
@@ -10,7 +11,12 @@ public class Character2DController : MonoBehaviour
     {
         var verticalMovement = Input.GetAxis("Vertical");
         var horizontalMovement = Input.GetAxis("Horizontal");
-        transform.position += new Vector3(verticalMovement, horizontalMovement, 0) * (Time.deltaTime * this.movementSpeed);
+        var angle = (float)Math.Atan2(transform.right.y, transform.right.x);
+        // Debug.Log(angle);
+        transform.Translate(Quaternion.Euler(0, 0, angle) 
+                            * new Vector3(verticalMovement, -horizontalMovement) 
+                            * (Time.deltaTime * this.movementSpeed));
+
         this.feetAnimator.SetFloat("speed", verticalMovement);
         this.feetAnimator.SetFloat("horizontalSpeed", horizontalMovement);
         this.fistAnimator.SetFloat("speed", verticalMovement);
