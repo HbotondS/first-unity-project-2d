@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/github/last-commit/HbotondS/first-unity-project-2d"/>
+
 # First unity project (Zombies game)
 
 2nd implementation of our [group project](https://github.com/HbotondS/2D-Top-down-shooter) in Unity framework.
