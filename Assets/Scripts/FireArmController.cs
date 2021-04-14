@@ -9,12 +9,12 @@ public class FireArmController : MonoBehaviour
 
     void Start()
     {
-        spawnObjects();
+        SpawnObjects();
     }
 
-    public void spawnObjects()
+    public void SpawnObjects()
     {
-        destroyObjects();
+        DestroyObjects();
         int randomItem = 0;
         GameObject toSpawn;
         MeshCollider c = quad.GetComponent<MeshCollider>();
@@ -35,7 +35,7 @@ public class FireArmController : MonoBehaviour
         }
     }
     
-    private void destroyObjects()
+    private void DestroyObjects()
     {
         foreach(GameObject o in GameObject.FindGameObjectsWithTag("Spawnable"))
         {
