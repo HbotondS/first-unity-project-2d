@@ -6,7 +6,7 @@ public class UpperBodyController : MonoBehaviour
 
     void Update()
     {
-        this.fistAnimator.SetBool("attack", Input.GetMouseButton(0));
+        this.fistAnimator.SetBool("attack", Input.GetButtonDown("Fire1"));
         if (Input.GetKeyDown(KeyCode.R))
         {
             this.fistAnimator.SetTrigger("isReloading");
