@@ -312,7 +312,6 @@ GameObject:
   m_Component:
   - component: {fileID: 530374389}
   - component: {fileID: 530374388}
-  - component: {fileID: 530374390}
   m_Layer: 0
   m_Name: FireArmSpawner
   m_TagString: Untagged
@@ -350,25 +349,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &530374390
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 530374387}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8be49500d5dcd294aa6eb58e40d2c139, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &987888125
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,7 +443,7 @@ Transform:
   m_LocalScale: {x: 30.35047, y: 14.5945, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &988941758
 GameObject:
@@ -757,6 +737,53 @@ MonoBehaviour:
   bulletPrefab: {fileID: 3757497446418528680, guid: 241373f55794d6140a7963fb5b82af15, type: 3}
   upperBodyAnimator: {fileID: 1557723029}
   bulletForce: 20
+--- !u!1 &1730395746
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1730395748}
+  - component: {fileID: 1730395747}
+  m_Layer: 0
+  m_Name: ZombieSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1730395747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730395746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2d262dd0a125541a740506b4db3e8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberToSpawn: 1
+  toSpawn: {fileID: 8556272454083197869, guid: 8cb6e54f292c6c5439318b60311a9f91, type: 3}
+  quad: {fileID: 987888125}
+  player: {fileID: 1908582326}
+--- !u!4 &1730395748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730395746}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.7529874, y: -0.5335771, z: -1.42793}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1908582322
 GameObject:
   m_ObjectHideFlags: 0
