@@ -16,13 +16,4 @@ public class UpperBodyController : MonoBehaviour
             this.fistAnimator.SetTrigger("meleeattack");
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        Destroy(other.gameObject);
-        if (other.gameObject.name.Equals("Pistol(Clone)"))
-        {
-            this.fistAnimator.SetBool("isGunEquipped", true);
-        }
-    }
 }

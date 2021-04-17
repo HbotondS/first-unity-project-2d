@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7259229612357808397}
   - component: {fileID: -9089313962146346184}
   m_Layer: 0
-  m_Name: FireArm
+  m_Name: Pistol
   m_TagString: Spawnable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
