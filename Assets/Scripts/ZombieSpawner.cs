@@ -6,6 +6,7 @@ public class ZombieSpawner : MonoBehaviour
     public GameObject toSpawn;
     public GameObject quad;
     public Rigidbody2D player;
+    public GameObject bloodSplash;
 
     void Start()
     {
@@ -24,7 +25,8 @@ public class ZombieSpawner : MonoBehaviour
 
             var zombie = Instantiate(toSpawn, pos, toSpawn.transform.rotation);
             var zombieController = zombie.GetComponent<ZombieController>();
-            zombieController.player = player;
+            zombieController.player = this.player;
+            zombieController.bloodSplash = this.bloodSplash;
         }
     }
     

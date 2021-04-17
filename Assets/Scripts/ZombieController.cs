@@ -4,6 +4,7 @@ public class ZombieController : MonoBehaviour
 {
     public Rigidbody2D player;
     public Animator zombieAnimator;
+    public GameObject bloodSplash;
 
     private Vector2 _playerPos;
     private float _moveSpeed = 2f;
@@ -41,6 +42,15 @@ public class ZombieController : MonoBehaviour
             var angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
 
             this._rb.rotation = angle;
+        }
+    }
+    
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.name.Equals("Bullet(Clone)"))
+        {
+            Instantiate(bloodSplash, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }

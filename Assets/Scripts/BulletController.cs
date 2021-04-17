@@ -21,10 +21,6 @@ public class BulletController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.name.Equals("Zombie(Clone)"))
-        {
-            Destroy(gameObject);
-            Destroy(other.gameObject);
-        }
+        Destroy(gameObject);
     }
 }
