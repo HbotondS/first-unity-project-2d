@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Shooting : MonoBehaviour
@@ -21,7 +19,6 @@ public class Shooting : MonoBehaviour
     private void Shoot()
     {
         var bullet = Instantiate(this.bulletPrefab, this.firePoint.position, this.firePoint.rotation);
-        // bullet.GetComponent<Rigidbody2D>().MoveRotation(-90f);
         bullet.GetComponent<Rigidbody2D>().AddForce(this.firePoint.right * this.bulletForce, ForceMode2D.Impulse);
     }
 }
