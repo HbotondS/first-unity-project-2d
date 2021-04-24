@@ -49,8 +49,10 @@ public class ZombieController : MonoBehaviour
     {
         if (other.gameObject.name.Equals("Bullet(Clone)"))
         {
-            Instantiate(bloodSplash, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            var blood = Instantiate(bloodSplash, transform.position, Quaternion.identity);
+            // second argument delays the destroy 
+            Destroy(gameObject, 0.2f);
+            Destroy(blood, 0.2f);
         }
     }
 }

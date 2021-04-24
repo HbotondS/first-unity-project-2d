@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   zombieAnimator: {fileID: 1753385933340171331}
+  bloodSplash: {fileID: 0}
 --- !u!50 &3537181313708306669
 Rigidbody2D:
   serializedVersion: 4
@@ -165,4 +166,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 3
