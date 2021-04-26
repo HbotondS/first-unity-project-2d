@@ -54,5 +54,18 @@ public class ZombieController : MonoBehaviour
             Destroy(gameObject, 0.2f);
             Destroy(blood, 0.2f);
         }
+
+        if (other.gameObject.name.Equals("Player"))
+        {
+            this.zombieAnimator.SetBool("attack", true);
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.name.Equals("Player"))
+        {
+            this.zombieAnimator.SetBool("attack", false);
+        }
     }
 }
