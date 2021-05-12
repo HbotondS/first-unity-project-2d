@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ZombieController : MonoBehaviour
 {
-    public Rigidbody2D player;
+    public Rigidbody2D playerRb;
     public Animator zombieAnimator;
     public GameObject bloodSplash;
 
@@ -10,6 +10,8 @@ public class ZombieController : MonoBehaviour
     private float _moveSpeed = 2f;
     private Rigidbody2D _rb;
     private bool _isWalking = false;
+    
+    private int damage = 10;
 
     private void Start()
     {
@@ -19,13 +21,13 @@ public class ZombieController : MonoBehaviour
 
     private void Update()
     {
-        this._playerPos = player.position;
+        this._playerPos = playerRb.position;
     }
 
 
     void FixedUpdate()
     {
-        var heading = player.position - this._rb.position;
+        var heading = playerRb.position - this._rb.position;
         if (heading.magnitude < 5 && !this._isWalking)
         {
             this._isWalking = true;
@@ -47,7 +49,8 @@ public class ZombieController : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.name.Equals("Bullet(Clone)"))
+        var othersName = other.gameObject.name;
+        if (othersName.Equals("Bullet(Clone)"))
         {
             var blood = Instantiate(bloodSplash, transform.position, Quaternion.identity);
             // second argument delays the destroy 
@@ -55,9 +58,10 @@ public class ZombieController : MonoBehaviour
             Destroy(blood, 0.2f);
         }
 
-        if (other.gameObject.name.Equals("Player"))
+        if (othersName.Equals("Player"))
         {
             this.zombieAnimator.SetBool("attack", true);
+            other.gameObject.GetComponent<PlayerController>().ReceiveDamage(damage);
         }
     }
 

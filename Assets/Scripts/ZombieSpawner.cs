@@ -30,7 +30,7 @@ public class ZombieSpawner : MonoBehaviour
 
             var zombie = Instantiate(toSpawn, pos, toSpawn.transform.rotation);
             var zombieController = zombie.GetComponent<ZombieController>();
-            zombieController.player = this.player;
+            zombieController.playerRb = this.player;
             zombieController.bloodSplash = this.bloodSplash;
 
             var secondsToWait = Random.Range(5, 10);

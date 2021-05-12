@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private Vector2 _movement;
     private Vector2 _mousePos;
 
+    private int health = 20;
+
     // used for getting the inputs 
     void Update()
     {
@@ -43,5 +45,17 @@ public class PlayerController : MonoBehaviour
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
 
         this.rb.rotation = angle;
+    }
+
+    public void ReceiveDamage(int damage)
+    {
+        Debug.Log("damage");
+        this.health -= damage;
+        if (this.health <= 0)
+        {
+            // pause the game
+            Time.timeScale = 0;
+            Debug.Log("GAME OVER");
+        }
     }
 }
