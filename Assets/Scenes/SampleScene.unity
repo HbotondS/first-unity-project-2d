@@ -684,9 +684,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2d262dd0a125541a740506b4db3e8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberToSpawn: 1
   toSpawn: {fileID: 8556272454083197869, guid: 8cb6e54f292c6c5439318b60311a9f91, type: 3}
   quad: {fileID: 987888125}
+  view: {fileID: 519420031}
   player: {fileID: 1908582326}
   bloodSplash: {fileID: 1730131258180265742, guid: 7188ecf4d873f2d45a8b43ae7fe51b63, type: 3}
 --- !u!4 &1730395748

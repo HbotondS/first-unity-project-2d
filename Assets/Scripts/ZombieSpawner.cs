@@ -1,10 +1,11 @@
+using System.Collections;
 using UnityEngine;
 
 public class ZombieSpawner : MonoBehaviour
 {
-    public int numberToSpawn;
     public GameObject toSpawn;
     public GameObject quad;
+    public Camera view;
     public Rigidbody2D player;
     public GameObject bloodSplash;
 
@@ -15,18 +16,44 @@ public class ZombieSpawner : MonoBehaviour
 
     private void SpawnObjects()
     {
-        var bounds = quad.GetComponent<MeshCollider>().bounds;
+        StartCoroutine(Waiter());
+    }
 
-        for(var i = 0; i < numberToSpawn; i++)
+    private IEnumerator Waiter()
+    {
+        
+        var mapBounds = quad.GetComponent<MeshCollider>().bounds;
+
+        while (true)
         {
-            var screenX = Random.Range(bounds.min.x, bounds.max.x);
-            var screenY = Random.Range(bounds.min.y, bounds.max.y);
-            var pos = new Vector2(screenX, screenY);
+            var pos = GeneratePos(mapBounds);
 
             var zombie = Instantiate(toSpawn, pos, toSpawn.transform.rotation);
             var zombieController = zombie.GetComponent<ZombieController>();
             zombieController.player = this.player;
             zombieController.bloodSplash = this.bloodSplash;
+
+            var secondsToWait = Random.Range(5, 10);
+
+            yield return new WaitForSeconds(secondsToWait);   
+        }
+    }
+
+    private Vector2 GeneratePos(Bounds mapBounds)
+    {
+        var cameraHeight = view.orthographicSize;
+        var cameraWidth = view.aspect * cameraHeight;
+        var cameraPos = view.transform.position;
+        while (true)
+        {
+            var posX = Random.Range(mapBounds.min.x, mapBounds.max.x);
+            var posY = Random.Range(mapBounds.min.y, mapBounds.max.y);
+        
+            if ((posX < (cameraPos.x - cameraWidth) || posX > (cameraPos.x + cameraWidth)) &&
+                (posY < (cameraPos.y - cameraHeight) || posY > (cameraPos.y + cameraHeight)))
+            {
+                return new Vector2(posX, posY);
+            }
         }
     }
     
